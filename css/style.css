@@ -1,0 +1,150 @@
+:root {
+  --stolzl: "Stolzl-Webfont", sans-serif;
+  --rubik:  "Rubik";
+  --light:  200;
+  --book:   500;
+
+  /* colors */
+  /* --accent: #192d6b; */
+  --accent: #fc352e;
+  --dark: #131313;
+  --dark-light: #4b4b4b;
+  --dark-middle: #898682;
+  --red-bright: #f41e17;
+  --red-light: #fc352e;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+}
+
+/* overlay masks */
+[class*=state-] {
+  overflow: hidden;
+}
+
+[class*=state-] .overlay {
+  display: block;
+}
+/* overlay masks */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #898682;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red-light);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--red-light);
+}
+::-webkit-scrollbar-track {
+  background: #e2e2e2;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #e2e2e2;
+}
+::-webkit-scrollbar-track:active {
+  background: #e2e2e2;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+:focus { outline: none !important }
+
+body {
+  font-size: 16px;
+  font-family: var(--stolzl);
+  font-weight: var(--light);
+  line-height: 1.2;
+  background-color: #f3f3f3;
+  color: var(--dark);
+}
+
+svg,
+img {
+  max-width: 100%;
+}
+
+.header {
+  padding-top: 43px;
+}
+
+.row-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-logo {
+  flex: 0 0 255px;
+  max-width: 255px;
+  padding-top: 7px;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+}
+
+.header-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 19px;
+  font-size: 18px;
+  font-weight: var(--book);
+  color: var(--dark);
+
+  border-radius: 20px;
+}
+
+.header-nav-drop {
+  position: relative;
+}
+
+.header-nav-drop::before {
+  position: absolute;
+  content: '';
+  top: 18px;
+  left: 50%;
+  width: 12px;
+  height: 11px;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: var(--dark);
+
+  transform: rotate(135deg)
+}
+
+.header-nav-drop:not(:last-child) .header-nav-link {
+  padding-right: 46px;
+}
+
+.header-nav-drop:last-child .header-nav-link {
+  padding-right: 24px;
+}
+
+.header-nav-link:hover {
+  background-color: #fff;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.header-nav-icon {
+  max-width: 18px;
+  margin-right: 4px;
+}
