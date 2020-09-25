@@ -25,8 +25,8 @@
           <img src="images/logo.svg" alt="">
         </a>
         <div class="header-links">
-          <a href="javascript:void(0)" class="header-links-link">Казань</a>
-          <a href="javascript:void(0)" class="header-links-link">8 800 222 02-20</a>
+          <a href="javascript:void(0)" class="header-links-link link-hover-style link-hovered">Казань</a>
+          <a href="javascript:void(0)" class="header-links-link link-hover-style">8 800 222 02-20</a>
         </div>
         <div class="header-nav">
           <div class="header-nav-item header-nav-drop"><a href="javascript:void(0)" class="header-nav-link">Услуги</a></div>
@@ -37,6 +37,321 @@
           <div class="header-nav-item header-nav-drop"><a href="javascript:void(0)" class="header-nav-link">Ещё</a></div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="section section-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7"></div>
+        <div class="col-lg-5">
+          <div class="section-top-side">
+            <h1 class="section-heading">
+              Федеральная сеть <br>
+              шиномонтажных <br>
+              мастерских
+            </h1>
+
+            <div class="top-list row no-gutters">
+              <div class="top-list-item col-6">
+                <div class="top-list-icon"><img src="images/top-list/1.svg" alt="1"></div>
+                <div class="top-list-name">Работаем 24 часа</div>
+              </div>
+              <div class="top-list-item col-6">
+                <div class="top-list-icon"><img src="images/top-list/3.svg" alt="2"></div>
+                <div class="top-list-name">33 пункта обслуживания</div>
+              </div>
+              <div class="top-list-item col-6">
+                <div class="top-list-icon"><img src="images/top-list/2.svg" alt="3"></div>
+                <div class="top-list-name">Онлайн запись</div>
+              </div>
+              <div class="top-list-item col-6">
+                <div class="top-list-icon"><img src="images/top-list/4.svg" alt="4"></div>
+                <div class="top-list-name">Качественный сервис</div>
+              </div>
+            </div>
+
+            <a href="javascript:void(0)" class="button-default button-light button-arrow button-shadow">Рядом на карте</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-slider-top">
+        <div class="col-lg-8">
+          <div class="slider-top-inner">
+            <div class="slider-top swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-top-slide"></div>
+                <div class="swiper-slide slider-top-slide" style="opacity: .7;"></div>
+                <div class="swiper-slide slider-top-slide" style="opacity: .5;"></div>
+              </div>
+  
+              <div class="slider-top-controls">
+                <div class="slider-top-counter"></div>
+                <div class="slider-top-nav">
+                  <div class="slider-top-nav-item slider-top-nav-prev"></div>
+                  <div class="slider-top-nav-item slider-top-nav-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            const topSlider = new Swiper('.slider-top', {
+              slidesPerView: 1,
+              loop: true,
+
+              on: {
+                init: function () {
+                  this.el.style.opacity = 1;
+                },
+              },
+
+              pagination: {
+                type: 'fraction',
+                el: '.slider-top-counter'
+              },
+
+              navigation: {
+                prevEl: '.slider-top-nav-prev',
+                nextEl: '.slider-top-nav-next'
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-services">
+    <div class="container">
+      <div class="section-heading">Услуги &laquo;5колесо&raquo;</div>
+
+      <div class="row row-services">
+        <div class="col-md-6 col-service">
+          <div class="service-item">
+            <div class="service-icon"><img src="images/services/1.png" alt="Сезонный шиномонтаж"></div>
+            <div class="service-body">
+              <div class="service-name">Сезонный шиномонтаж</div>
+              <div class="service-desc">
+                Выгодный и качественный сезонный <br>
+                шиномонтаж в сети «5 колесо».
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-service">
+          <div class="service-item">
+            <div class="service-icon"><img src="images/services/2.png" alt="Хранение шин"></div>
+            <div class="service-body">
+              <div class="service-name">Хранение шин</div>
+              <div class="service-desc">
+                Ваши шины занимают много полезного места? <br>
+                Доверьте их хранение нам.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-service">
+          <div class="service-item">
+            <div class="service-icon"><img src="images/services/3.png" alt="Правка дисков"></div>
+            <div class="service-body">
+              <div class="service-name">Правка дисков</div>
+              <div class="service-desc">
+                Ремонт дисков на специализированном <br>
+                оборудовании.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-service">
+          <div class="service-item">
+            <div class="service-icon"><img src="images/services/4.png" alt="Ремонт шин"></div>
+            <div class="service-body">
+              <div class="service-name">Ремонт шин</div>
+              <div class="service-desc">
+                Ремонт автомобильных шин любой сложности <br>
+                с гарантией.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-service">
+          <div class="service-item service-item-last">
+            <div class="service-icon"><img src="images/services/5.svg" alt="Ремонт шин"></div>
+            <div class="service-body">
+              <div class="service-name">Онлайн-запись на услугу</div>
+              <div class="service-desc">
+                Быстро и просто забронируйте удобный день <br>
+                и время за собой.
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="button-default button-arrow button-hover service-button">Перейти</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section section-catalog">
+    <div class="container">
+      <div class="section-heading">Магазин шин и дисков</div>
+
+      <div class="row row-catalog-product">
+        <div class="col-6">
+          <div class="catalog-product-item">
+            <a href="javascript:void(0)" class="catalog-product-photo" style="background-image: url(images/shini/1.png);"></a>
+            <div class="catalog-product-body">
+              <div class="catalog-product-head">
+                <div class="catalog-product-name"><span>Летние шины</span> <img src="images/product-icons/sun.svg" alt=""></div>
+                <div class="catalog-product-info">19 105 шин в каталоге</div>
+              </div>
+              <div class="catalog-product-foot">
+                <div class="catalog-product-price">от <span>2 660</span> <i class="rub">₽</i></div>
+                <div class="catalog-product-goto">
+                  <div class="catalog-product-deli">
+                    <div>Бесплатная доставка</div>
+                    <div>Бесплатный шиномонтаж</div>
+                  </div>
+  
+                  <a href="javascript:void(0)" class="button-default button-arrow button-gray">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="catalog-product-item">
+            <a href="javascript:void(0)" class="catalog-product-photo" style="background-image: url(images/shini/2.png);"></a>
+            <div class="catalog-product-body">
+              <div class="catalog-product-head">
+                <div class="catalog-product-name"><span>Зимние шины</span> <img src="images/product-icons/snowflake.svg" alt=""> <img src="images/product-icons/sh.svg" alt=""></div>
+                <div class="catalog-product-info">17 983 шины в каталоге</div>
+              </div>
+              <div class="catalog-product-foot">
+                <div class="catalog-product-price">от <span>2 660</span> <i class="rub">₽</i></div>
+                <div class="catalog-product-goto">
+                  <a href="javascript:void(0)" class="button-default button-arrow button-gray">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="catalog-product-item">
+            <a href="javascript:void(0)" class="catalog-product-photo" style="background-image: url(images/diski/1.png);"></a>
+            <div class="catalog-product-body">
+              <div class="catalog-product-head">
+                <div class="catalog-product-name"><span>Литые диски</span></div>
+                <div class="catalog-product-info">9 801 диск в каталоге</div>
+              </div>
+              <div class="catalog-product-foot">
+                <div class="catalog-product-price">от <span>1 860</span> <i class="rub">₽</i></div>
+                <div class="catalog-product-goto">
+                  <div class="catalog-product-deli">
+                    <div>Бесплатная доставка</div>
+                    <div>Бесплатный шиномонтаж</div>
+                  </div>
+
+                  <a href="javascript:void(0)" class="button-default button-arrow button-gray">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="catalog-product-item">
+            <a href="javascript:void(0)" class="catalog-product-photo" style="background-image: url(images/diski/2.png);"></a>
+            <div class="catalog-product-body">
+              <div class="catalog-product-head">
+                <div class="catalog-product-name"><span>Штампованные диски</span></div>
+                <div class="catalog-product-info">3 855 штампованных дисков в каталоге</div>
+              </div>
+              <div class="catalog-product-foot">
+                <div class="catalog-product-price">от <span>660</span> <i class="rub">₽</i></div>
+                <div class="catalog-product-goto">
+                  <a href="javascript:void(0)" class="button-default button-arrow button-gray">Перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-stock">
+    <div class="container">
+      <div class="section-heading">Акции</div>
+
+      <div class="row row-stock">
+        <div class="col-md-6">
+          <div class="stock-item">
+            <div class="stock-image"></div>
+            <div class="stock-body">
+              <div class="stock-head">
+                <div class="stock-title">
+                  Заголовок акции
+                  в две строки
+                </div>
+                <div class="stock-desc">Бессрочная акция</div>
+              </div>
+              <a href="" class="stock-btn button-default button-gray button-arrow">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="stock-item">
+            <div class="stock-image"></div>
+            <div class="stock-body">
+              <div class="stock-head">
+                <div class="stock-title">
+                  Длинный заголовок 
+                  акции аж в целых три 
+                  строки, а то и больше
+                </div>
+                <div class="stock-desc">Бессрочная акция</div>
+              </div>
+              <a href="" class="stock-btn button-default button-gray button-arrow">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btns-middle">
+        <a href="javascript:void(0)" class="button-default button-hover">Показать ещё</a>
+        <a href="javascript:void(0)" class="button-default button-border-red button-arrow">Перейти</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-seo">
+    <div class="container">
+      <div class="section-heading">Шиномонтаж в Казани</div>
+
+      <div class="row row-seo">
+        <div class="col-md-6">
+          <h3>Шиномонтаж в пятом колесе</h3>
+
+          <p>
+            Есть над чем задуматься: непосредственные участники технического прогресса, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. А ещё стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Многие известные личности преданы социально-демократической анафеме.
+          </p>
+
+          <p>
+            С другой стороны, реализация намеченных плановых заданий напрямую зависит от как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, некоторые особенности внутренней политики превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.
+          </p>
+
+          <h3>Круглосуточный шиномонтаж рядом</h3>
+
+          <p>
+            Есть над чем задуматься: непосредственные участники технического прогресса, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. А ещё стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Многие известные личности преданы социально-демократической анафеме.
+          </p>
+
+          <a href="javascript:void(0)" class="link-default seo-link">Читать далее</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
