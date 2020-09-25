@@ -708,7 +708,13 @@ i.rub {
   color: #fff;
 
   padding-top: 96px;
+  padding-bottom: 78px;
   margin-top: 141px;
+}
+
+.section-contacts a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact-item {
@@ -765,4 +771,12 @@ i.rub {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+}
+
+.contact-form-row {
+  margin-bottom: 14px;
+}
+
+.contact-form-agree {
+  font-size: 14px;
 }
