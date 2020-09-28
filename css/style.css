@@ -886,3 +886,59 @@ i.rub {
 .r-item {
   display: none;
 }
+
+.header-burger {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.burger-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+
+  background-color: #fff;
+
+  transition: all .2s ease;
+}
+
+.line-1 {
+  top: 3px;
+}
+
+.line-2 {
+  top: 13px;
+}
+
+.line-3 {
+  top: 23px;
+}
+
+.state-nav .line-1 {
+  top: 50%;
+  transform: rotate(135deg)
+}
+
+.state-nav .line-2 {
+  opacity: 0;
+}
+
+.state-nav .line-3 {
+  top: 50%;
+  transform: rotate(-135deg)
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(255,255,255, .5);
+
+  z-index: 6;
+}
