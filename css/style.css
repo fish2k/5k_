@@ -780,3 +780,96 @@ i.rub {
 .contact-form-agree {
   font-size: 14px;
 }
+
+.footer {
+  background-color: #24272C;
+  padding-top: 100px;
+  padding-bottom: 18px;
+  color: #fff;
+  position: relative;
+}
+
+.footer-col {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  flex: 0 0 257px;
+  max-width: 257px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-content {
+  margin-top: 47px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-link {
+  color: #fff;
+  margin-bottom: 11px;
+}
+
+.footer-copyright {
+  margin-top: 31px;
+  color: #7e7e7e;
+  font-weight: 300;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-shape {
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+.iden-logo {
+  display: flex;
+  padding-bottom: 48px;
+  margin-left: 120px;
+  width: 81px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-follow-list {
+  margin-top: 45px;
+  margin-bottom: 52px;
+}
+
+.footer-follow-social {
+  margin-right: 15px;
+  opacity: 0.8;
+
+  transition: all .15s ease;
+}
+
+.footer-follow-social:hover {
+  text-decoration: none;
+  opacity: 1;
+}
