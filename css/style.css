@@ -86,6 +86,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 4;
 }
 
 .row-header {
@@ -235,6 +236,7 @@ img {
 }
 
 .section-top {
+  position: relative;
   padding-top: 94px;
   background-color: #f3f4f4;
   background-image: url(../images/top-image.png);
@@ -771,6 +773,13 @@ i.rub {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+
+  transition: all .15s ease;
+}
+
+.contact-form-submit:hover {
+  background-color: #fff;
+  color: var(--dark)
 }
 
 .contact-form-row {
@@ -872,4 +881,8 @@ i.rub {
 .footer-follow-social:hover {
   text-decoration: none;
   opacity: 1;
+}
+
+.r-item {
+  display: none;
 }
