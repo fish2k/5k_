@@ -1177,10 +1177,6 @@ i.rub {
   color: #898682;
 }
 
-.page-wrap .btns-middle {
-  margin-top: 21px;
-}
-
 .section-advantage {
   margin-top: 150px;
   margin-bottom: 40px;
@@ -1197,4 +1193,44 @@ i.rub {
 
 .contacts-page {
   margin-top: 0;
+}
+
+.stock-content {
+  margin-top: 65px;
+}
+
+.stock-content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.stock-content-image {
+  margin-right: 30px;
+  margin-bottom: 0;
+  float: left;
+}
+
+.stock-content p {
+  margin-bottom: 20px;
+  font-weight: var(--book);
+}
+
+.stock-post-exp {
+  padding-top: 26px;
+  margin-bottom: 0 !important;
+  padding-bottom: 31px;
+  font-weight: var(--light) !important
+}
+
+.page-news {
+  margin-bottom: 150px;
+}
+
+.page-news .btns-middle {
+  margin-top: 21px;
+}
+
+.section-slider-news {
+  margin-top: 45px;
 }
