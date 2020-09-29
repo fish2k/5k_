@@ -476,6 +476,18 @@
     font-size: 24px;
   }
 
+  .service-item:not(.service-item-last)::before {
+    display: none;
+  }
+
+  .service-item:not(.service-item-last):hover {
+    background-image: none;
+  }
+  
+  .col-service {
+    margin-bottom: 15px;
+  }
+
   .header-nav {
     width: 100%;
     right: -100%;
