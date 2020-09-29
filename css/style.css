@@ -82,11 +82,14 @@ img {
 
 .header {
   padding-top: 43px;
+  padding-bottom: 45px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 4;
+
+  background-color: #f3f4f4;
 }
 
 .row-header {
@@ -112,6 +115,7 @@ img {
   background-color: var(--dark-light);
   padding-top: 0;
   transition: all .2s ease;
+  padding-bottom: 0;
 }
 
 .header-fixed .header-logo {
@@ -1124,4 +1128,73 @@ i.rub {
   padding-right: 52px;
 
   background-position-x: 83%;
+}
+
+.page-wrap {
+  margin-top: 139px;
+  padding-top: 30px;
+}
+
+.stock-item-page {
+  margin-bottom: 30px;
+}
+
+.breadcrumbz {
+  margin-bottom: 43px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbz-item {
+  font-size: 14px;
+  font-weight: var(--book);
+  color: #898682;
+  margin-right: 27px;
+  position: relative;
+}
+
+.breadcrumbz-item::before {
+  position: absolute;
+  content: '';
+  top: 2px;
+  right: -16px;
+  width: 8px;
+  height: 10px;
+
+  background-image: url(../images/razdel/breadcrumbz-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbz-item:last-child::before {
+  display: none;
+}
+
+.breadcrumbz-item:last-child {
+  pointer-events: none;
+}
+
+.breadcrumbz-item:hover {
+  color: #898682;
+}
+
+.page-wrap .btns-middle {
+  margin-top: 21px;
+}
+
+.section-advantage {
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+.section-advantage .top-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-advantage .top-list-item {
+  padding-left: 35px;
+}
+
+.contacts-page {
+  margin-top: 0;
 }

@@ -23,32 +23,32 @@ $(document).ready(function() {
         body.removeClass("state-nav")
     })
 
-    const responsiveHooks = function (getWidth) {
-        // fixed header
-        if ( getWidth >= 991 ) {
-            $(window).scroll(function () {
-                var st = $(this).scrollTop()
+    // const responsiveHooks = function (getWidth) {
+    //     // fixed header
+    //     if ( getWidth >= 991 ) {
+    //         $(window).scroll(function () {
+    //             var st = $(this).scrollTop()
 
-                if (st >= headerOffset) {
-                    $('.header-fixed-placeholder').css({
-                        height: headerOffset + 'px'
-                    })
-                    headerMain.addClass('header-fixed')
-                } else {
-                    $('.header-fixed-placeholder').css({
-                        height: 0
-                    })
-                    headerMain.removeClass('header-fixed')
-                }
-            })
-        }
-    }
+    //             if (st >= 600) {
+    //                 $('.header-fixed-placeholder').css({
+    //                     height: headerOffset + 'px'
+    //                 })
+    //                 headerMain.addClass('header-fixed')
+    //             } else {
+    //                 $('.header-fixed-placeholder').css({
+    //                     height: 0
+    //                 })
+    //                 headerMain.removeClass('header-fixed')
+    //             }
+    //         })
+    //     }
+    // }
 
-    $(window).resize(function () {
-        var currentWidth = $(this).innerWidth();
+    // $(window).resize(function () {
+    //     var currentWidth = $(this).innerWidth();
 
-        responsiveHooks(currentWidth)
-    });
+    //     responsiveHooks(currentWidth)
+    // });
 
-    responsiveHooks($(this).innerWidth());
+    // responsiveHooks($(this).innerWidth());
 })
