@@ -170,6 +170,10 @@
 
 
 @media (max-width: 991px) {
+  .header-nav-sub {
+    display: none !important;
+  }
+
   .r-item {
     display: block;
   }
@@ -215,7 +219,7 @@
     bottom: 0;
     width: 280px;
 
-    padding-top: 5px;
+    padding-top: 15px;
 
     background-color:var(--dark-light);
 
@@ -237,8 +241,9 @@
 
   .header-nav-link {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     padding: 14px 15px 12px 15px;
+    position: relative;
   }
 
   .header-nav-link:hover {
@@ -247,8 +252,36 @@
     border-radius: 0;
   }
 
+  .header-nav-link::after {
+    position: absolute;
+    content: '';
+    top: 40%;
+    right: 25px;
+
+    width: 10px;
+    height: 10px;
+    
+    border-width: 1px 1px 0 0;
+    border-color: #b0b0b0;
+    border-style: solid;
+
+    transform: rotate(45deg);
+
+    transition: all .2s ease;
+  }
+
+  .header-nav-link:hover::after {
+    border-color: #fff;
+  }
+
   .header-nav-drop::before {
     display: none;
+  }
+
+  .header-nav-drop.hover .header-nav-link,
+  .header-nav-drop:hover .header-nav-link {
+    background-color: var(--accent);
+    color: #fff
   }
 
   .iden-logo {
