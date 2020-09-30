@@ -10,6 +10,14 @@
     align-items: flex-start;
   }
 
+  .header-nav-sub {
+    flex-direction: column;
+  }
+
+  .header-nav-link {
+    border-radius: 10px;
+  }
+
   .header > .container {
     max-width: 100%;
   }
@@ -118,11 +126,44 @@
   .catalog-product-body {
     padding: 15px;
   }
+
+  .online-icon {
+    max-width: 50px;
+    top: 15px;
+    right: 15px;
+  }
 }
 
 @media (max-width: 1200px) {
   .section-heading {
     font-size: 36px;
+  }
+
+  .online {
+    padding: 30px 15px;
+  }
+
+  .online-title {
+    padding-right: 60px;
+    font-size: 13px;
+  }
+
+  .online-desc {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .online .button-hover {
+    padding: 10px 20px;
+  }
+
+  .online-btn {
+    margin-top: 0;
+  }
+
+  .stock-content-image {
+    max-width: 50%;
+    margin-bottom: 20px;
   }
 
   .header-links {
@@ -172,6 +213,21 @@
 @media (max-width: 991px) {
   .header-nav-sub {
     display: none !important;
+  }
+
+  .slider-controls {
+    top: 40%;
+  }
+
+  .online {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider-nav {
+    width: 30px;
+    height: 30px;
   }
 
   .page-wrap {
@@ -418,6 +474,34 @@
     flex-direction: column;
   }
 
+  .service-detail {
+    font-size: 14px;
+  }
+
+  .service-detail h3 {
+    font-size: 16px;
+  }
+
+  .table-service td,
+  .table-service th {
+    font-size: 12px;
+  }
+
+  .table-service td:not(:first-child),
+  .table-service th:not(:first-child) {
+    width: auto;
+  }
+
+  .table-service th,
+  .table-service td {
+    padding: 10px;
+  }
+
+  .stock-content-image {
+    max-width: 100%;
+    float: none;
+  }
+
   .btns-middle {
     margin-top: 21px;
   }
@@ -484,6 +568,10 @@
 @media (max-width: 480px) {
   .section-heading {
     font-size: 24px;
+  }
+
+  .slider-controls {
+    top: 42%;
   }
 
   .page-news {
