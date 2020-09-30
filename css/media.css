@@ -215,6 +215,14 @@
     display: none !important;
   }
 
+  .section-vac {
+    padding-top: 120px;
+  }
+
+  .section-vac-col {
+    padding-bottom: 0;
+  }
+
   .slider-controls {
     top: 40%;
   }
