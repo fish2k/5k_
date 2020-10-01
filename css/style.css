@@ -324,7 +324,8 @@ img {
 
   transition: background-color .15s ease,
               box-shadow .15s ease,
-              color .15s ease;
+              color .15s ease,
+              border-color .15s ease;
 }
 
 .button-default:hover {
@@ -649,7 +650,7 @@ i.rub {
   opacity: 1;
 }
 
-.catalog-product-item:hover .button-default {
+.catalog-product-item:hover .button-default:not(.button-border) {
   background-color: var(--accent);
   color: #fff;
   background-image: url(../images/btn-arrow-hover.svg);
@@ -1853,4 +1854,57 @@ select.input-styles {
 
 .vac-detail {
   margin-bottom: 89px;
+}
+
+.catalog-product-cost {
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 11px;
+}
+
+.catalog-product-cost span {
+  font-size: 24px;
+  margin-left: 4px;
+}
+
+.catalog-product-cost i.rub {
+  font-weight: 500;
+  font-size: 100%;
+  margin-left: -3px;
+}
+
+.button-border {
+  border-color: #3b3b3b;
+}
+
+.serivce-goto {
+  flex: 0 0 100%;
+  max-width: 100%;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.button-border {
+  border: 1px solid #dedfe0;
+  padding-top: 15px;
+  padding-bottom: 14px;
+}
+
+.serivce-goto .button-border {
+  margin-right: 15px;
+}
+
+.catalog-product-item:hover .button-border {
+  background-color: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+}
+
+.section-advantage-services {
+  margin-top: 49px;
+  margin-bottom: 109px;
+}
+
+.section-stock-services {
+  margin-bottom: 148px;
 }
