@@ -689,11 +689,32 @@
   .row-feedback {
     margin-top: 30px;
   }
+
+  .feedback-hint {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .default-check {
+    margin-right: 10px;
+  }
+
+  .feedback-agree span {
+    font-size: 14px;
+  }
+
+  .breadcrumbz-item {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 480px) {
   .section-heading {
     font-size: 24px;
+  }
+
+  .vac-content-hint-text {
+    font-size: 11px;
   }
 
   .vac-content-detail {
