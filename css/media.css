@@ -10,6 +10,24 @@
     align-items: flex-start;
   }
 
+  .vac-content-foot {
+    flex-direction: column;
+  }
+
+  .vac-content-hint,
+  .vac-content-btns {
+    flex: unset;
+    max-width: none;
+  }
+
+  .vac-content-btns {
+    margin-top: 15px;
+  }
+
+  .vac-detail-image {
+    max-width: 80%;
+  }
+
   .header-nav-sub {
     flex-direction: column;
   }
@@ -215,12 +233,25 @@
     display: none !important;
   }
 
+  .col-vac-side::before {
+    display: none;
+  }
+
+  .vac-content-detail {
+    margin-left: 0;
+  }
+
+  .vac-side {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .section-vac {
     padding-top: 120px;
   }
 
   .section-vac-col {
-    padding-bottom: 0;
+    padding-bottom: 15px;
   }
 
   .slider-controls {
@@ -482,6 +513,23 @@
     flex-direction: column;
   }
 
+  .vac-image {
+    display: none;
+  }
+
+  .vac-body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .vac-item {
+    height: auto;
+  }
+
+  .vac-foot {
+    margin-top: 30px;
+  }
+
   .service-detail {
     font-size: 14px;
   }
@@ -571,11 +619,103 @@
   .section-seo {
     padding-bottom: 0;
   }
+
+  .section-vac {
+    padding-top: 50px;
+    margin-top: 64px;
+  }
+
+  .vac-content,
+  .vac-content-hint-text {
+    font-size: 14px;
+  }
+
+  .vac-content-hint-icon {
+    flex: 0 0 40px;
+    max-width: 40px;
+  }
+
+  .vac-content-hint-text {
+    padding-left: 15px;
+
+    flex: 0 0 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+
+  .vac-content-btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .vac-foot {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .vac-earn {
+    margin-bottom: 25px;
+  }
+
+  .vac-head {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .vac-name {
+    font-size: 18px;
+  }
+
+  .vac-detail {
+    margin-bottom: 0;
+  }
+
+  .col-feedback {
+    margin-bottom: 15px;
+  }
+
+  .input-styles {
+    height: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+
+  .row-feedback {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 480px) {
   .section-heading {
     font-size: 24px;
+  }
+
+  .vac-content-detail {
+    padding: 15px;
+  }
+  
+  .vac-body {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 12px;
+  }
+
+  .checklist-vac {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .checklist-item {
+    padding-left: 25px;
+    background-size: 15px;
+    background-position: 0 4px;
   }
 
   .slider-controls {
