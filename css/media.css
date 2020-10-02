@@ -5,9 +5,53 @@
 }
 
 @media (max-width: 1500px) {
+  .addr-map-col:first-child {
+    margin-bottom: 10px;
+  }
+
+  .addr-map-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .addr-map-link {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .addr-map-col {
+    flex-wrap: wrap;
+  }
+
+  .addr-map-city,
+  .addr-map-time {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .catalog-product-foot {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .reviews-show-item {
+    margin-bottom: 15px;
+  }
+
+  .serivce-goto {
+    flex-direction: column;
+  }
+
+  .catalog-product-foot {
+    align-items: flex-end;
+  }
+
+  .serivce-goto .button-border {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 
   .vac-content-foot {
@@ -157,6 +201,10 @@
     font-size: 36px;
   }
 
+  .catalog-product-foot {
+    align-items: center;
+  }
+
   .online {
     padding: 30px 15px;
   }
@@ -225,12 +273,99 @@
   .catalog-product-photo {
     padding-bottom: 240px;
   }
+
+  .reviews-show {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reviews-show-item {
+    margin-bottom: 10px;
+  }
+
+  .catalog-pagination-item {
+    flex: 0 0 40px;
+    max-width: 40px;
+    height: 40px;
+  }
+
+  .leave-review-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
 @media (max-width: 991px) {
+  .app-step {
+    font-size: 16px;
+    background-size: 10px;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+
+  .app-step-count {
+    font-size: 20px;
+    flex: 0 0 20px;
+    max-width: 20px;
+    margin-right: 5px;
+  }
+
+  .review-item-user {
+    flex: 0 0 80px;
+    max-width: 80px;
+  }
+
+  .review-item-body {
+    flex: 0 0 calc(100% - 80px);
+    max-width: calc(100% - 80px);
+}
+
+  .scores-col {
+    order: 1;
+  }
+
+  .reviews-col {
+    order: 2
+  }
+
+  .detail-score-sticky {
+    padding: 30px;
+
+    margin-bottom: 50px;
+  }
+
+  .detail-score-desc {
+    font-size: 12px;
+  }
+
+  .review-controls .catalog-pagination {
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .review-controls {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reviews-inner {
+    font-size: 14px;
+  }
+
   .header-nav-sub {
     display: none !important;
+  }
+
+  .product-service {
+    text-align: center;
+  }
+
+  .product-service .catalog-product-photo {
+    background-size: cover;
   }
 
   .col-vac-side::before {
@@ -509,6 +644,29 @@
 }
 
 @media (max-width: 768px) {
+  .review-user-letter {
+    font-size: 45px;
+    line-height: 100%;
+  }
+
+  .catalog-nav-item {
+    margin: 0;
+  }
+
+  .catalog-pagination-item {
+    font-size: 16px;
+  }
+
+  .review-item-user {
+    flex: 0 0 50px;
+    max-width: 50px;
+  }
+
+  .review-item-body {
+    flex: 0 0 calc(100% - 50px);
+    max-width: calc(100% - 50px);
+  }
+
   .stock-item {
     flex-direction: column;
   }
@@ -711,6 +869,71 @@
 @media (max-width: 480px) {
   .section-heading {
     font-size: 24px;
+  }
+
+  .page-reviews {
+    margin-bottom: 0;
+  }
+
+  .leave-review-agree {
+    font-size: 12px;
+  }
+
+  .leave-review-agree span {
+    padding-left: 15px;
+  }
+
+  .leave-review-submit {
+    margin-top: 0;
+  }
+
+  .leave-review-row, .leave-review-rate {
+    margin-bottom: 15px;
+  }
+
+  .leave-review-form-helper {
+    font-size: 12px;
+  }
+
+  .leave-review-row, .leave-review-rate {
+    margin-bottom: 15px;
+  }
+
+  .leave-review-input {
+    padding: 14px 15px;
+    font-size: 12px;
+  }
+
+  .leave-review-row {
+    margin-bottom: 15px;
+  }
+
+  .review-item {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+
+  .review-list {
+    margin-top: 30px;
+  }
+
+  .review-content-title {
+    margin-bottom: 5px;
+  }
+
+  .review-item-user {
+    display: none;
+  }
+
+  .review-item-body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .catalog-pagination-item {
+    flex: 0 0 35px;
+    max-width: 35px;
+    height: 35px;
   }
 
   .vac-content-hint-text {
