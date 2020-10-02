@@ -311,6 +311,11 @@
     margin-right: 5px;
   }
 
+  .app-step-name {
+    padding-top: 2px;
+    position: static;
+  }
+
   .review-item-user {
     flex: 0 0 80px;
     max-width: 80px;
