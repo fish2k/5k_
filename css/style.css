@@ -1745,6 +1745,7 @@ select.input-styles {
   color: var(--accent);
 }
 
+.page-zapis .breadcrumbz,
 .page-vac-detail .breadcrumbz {
   margin-bottom: 35px;
 }
@@ -2340,7 +2341,7 @@ textarea.leave-review-input {
 }
 
 .row-online-app {
-  margin-top: 62px;
+  margin-top: 59px;
   align-items: center;
   padding-bottom: 150px;
 }
@@ -2391,14 +2392,6 @@ textarea.leave-review-input {
 
 .app-zapis {
   background-color: var(--dark-light);
-}
-
-.app-zapis.success {
-  background-color: var(--bluee);
-}
-
-.addr-success.active .addr-heading {
-  color: var(--bluee) !important
 }
 
 .datepicker--nav-title i,
@@ -2687,7 +2680,6 @@ select.addr-form-input {
 
 .addr-success.active {
   display: block;
-  color: var(--bluee)
 }
 
 .addr-success-image {
@@ -2758,4 +2750,359 @@ select.addr-form-input {
   background-position: 0 0;
 
   font-weight: var(--book);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.addr-service {
+  padding: 28px 0 0 50px;
+  display: none;
+}
+
+.addr-service.active {
+  display: block;
+}
+
+.addr-service-list {
+  margin-top: 48px;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addr-service-item {
+  flex: 0 0 45.3%;
+  max-width: 45.3%;
+  margin-bottom: 20px;
+}
+
+.addr-service-item:nth-of-type(even) {
+  flex: 0 0 54.7%;
+  max-width: 54.7%;
+}
+
+.addr-service-item-btn {
+  display: inline-flex;
+  height: 50px;
+  border: 1px solid #898682;
+  border-radius: 30px;
+  padding-left: 70px;
+  padding-right: 28px;
+
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-position: 19px center;
+
+  color: var(--dark-light);
+  font-weight: var(--book);
+}
+
+.addr-service-item-btn:hover {
+  text-decoration: none;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.addr-service-item-btn.active {
+  background-color: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.srv-1 {
+  background-image: url(../images/services/app/1-def.png);
+}
+
+.srv-1:hover {
+  background-image: url(../images/services/app/1-hover.png);
+}
+
+.srv-1.active {
+  background-image: url(../images/services/app/1-active.png);
+}
+
+.srv-2 {
+  background-image: url(../images/services/app/2-def.png);
+}
+
+.srv-2:hover {
+  background-image: url(../images/services/app/2-hover.png);
+}
+
+.srv-2.active {
+  background-image: url(../images/services/app/2-active.png);
+}
+
+.srv-3 {
+  background-image: url(../images/services/app/3-def.png);
+}
+
+.srv-3:hover {
+  background-image: url(../images/services/app/3-hover.png);
+}
+
+.srv-3.active {
+  background-image: url(../images/services/app/3-active.png);
+}
+
+.srv-4 {
+  background-image: url(../images/services/app/4-def.png);
+}
+
+.srv-4:hover {
+  background-image: url(../images/services/app/4-hover.png);
+}
+
+.srv-4.active {
+  background-image: url(../images/services/app/4-active.png);
+}
+
+.srv-5 {
+  background-image: url(../images/services/app/5-def.png);
+}
+
+.srv-5:hover {
+  background-image: url(../images/services/app/5-hover.png);
+}
+
+.srv-5.active {
+  background-image: url(../images/services/app/5-active.png);
+}
+
+.srv-6 {
+  background-image: url(../images/services/app/6-def.png);
+}
+
+.srv-6:hover {
+  background-image: url(../images/services/app/6-hover.png);
+}
+
+.srv-6.active {
+  background-image: url(../images/services/app/6-active.png);
+}
+
+.srv-7 {
+  background-image: url(../images/services/app/7-def.png);
+}
+
+.srv-7:hover {
+  background-image: url(../images/services/app/7-hover.png);
+}
+
+.srv-7.active {
+  background-image: url(../images/services/app/7-active.png);
+}
+
+.srv-8 {
+  background-image: url(../images/services/app/8-def.png);
+}
+
+.srv-8:hover {
+  background-image: url(../images/services/app/8-hover.png);
+}
+
+.srv-8.active {
+  background-image: url(../images/services/app/8-active.png);
+}
+
+.addr-map-select {
+  display: none;
+  height: 100%;
+}
+
+.addr-map-select.active {
+  display: block;
+}
+
+#addSelectPoint {
+  height: 100%;
+}
+
+.addr-map-col {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.addr-map-col:nth-of-type(even) {
+  flex: 0 0 55%;
+  max-width: 55%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addr-map-col-clear,
+.addr-map-col-clear:nth-of-type(even) {
+  flex: unset;
+  max-width: none;
+}
+
+/* contacts */
+.contacts-desc {
+  font-size: 14px;
+  line-height: 85%;
+}
+
+.row-points {
+  margin-top: 68px;
+}
+
+.points-heading {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.addr-map {
+  position: relative;
+  height: 500px;
+}
+
+.addr-map > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.addr-map-bar {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+
+  background-color: var(--dark-light);
+
+
+  padding: 20px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.addr-map-city {
+  padding-left: 21px;
+  background-image: url(../images/contacts/pin-light.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  font-weight: var(--book);
+}
+
+.contacts-req {
+  margin-top: 65px;
+  font-weight: var(--book);
+  padding-bottom: 150px;
+}
+
+.contacts-req .points-heading {
+  margin-bottom: 21px;
+}
+
+.contacts-addr {
+  padding: 20px 15px 20px 20px;
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+.contacts-addr-list {
+  max-height: 460px;
+  overflow-y: scroll;
+}
+
+.contacts-addr-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contacts-addr-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px 20px;
+  cursor: pointer
+}
+
+.contacts-addr-name {
+  padding-left: 20px;
+  background-image: url(../images/contacts/pin-gray.svg);
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+  position: relative;
+  top: 2px;
+  font-weight: var(--book);
+}
+
+.contacts-addr-button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-light);
+  border-radius: 50%;
+
+  background-image: url(../images/contacts/pin.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+}
+
+.contacts-addr-item.active .contacts-addr-button {
+  background-color: var(--red-light);
+  opacity: 1;
+}
+
+.contacts-addr-item:hover .contacts-addr-button {
+  opacity: 1;
+}
+
+.contacts-addr-item:hover {
+  background-color: #ededed;
+}
+
+.contacts-icon {
+  flex: 0 0 48px;
+  max-width: 48px;
+}
+
+.row-contacts {
+  margin-top: 42px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: flex-end;
+
+  height: 100%;
+}
+
+.contacts-body {
+  padding-left: 19px;
+}
+
+.contacts-name {
+  display: inline-flex;
+  font-weight: normal;
+  margin-bottom: 7px;
+  color: var(--dark) !important;
+  text-decoration: none !important;
+  position: relative;
+}
+
+a.contacts-name::before {
+  position: absolute;
+  content: '..............................................';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: var(--book);
+  overflow: hidden;
+  opacity: 0;
+}
+
+a.contacts-name:hover::before {
+  opacity: 1;
+}
+
+#contactMap {
+  height: 100%;
 }

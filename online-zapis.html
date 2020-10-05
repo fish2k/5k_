@@ -17,6 +17,8 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/datepicker/js/datepicker.js"></script>
+
+  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
 </head>
 
 <body>
@@ -91,7 +93,7 @@
 
   <div class="header-fixed-placeholder"></div>
 
-  <div class="page-wrap">
+  <div class="page-wrap page-zapis">
     <div class="container">
       <div class="breadcrumbz">
         <a href="/" class="breadcrumbz-item">Главная</a>
@@ -105,11 +107,11 @@
           <div class="app-steps-list">
             <div class="app-step app-step-1 active">
               <div class="app-step-count">1.</div>
-              <div class="app-step-name">Шиномонтаж</div>
+              <div class="app-step-name srv-selected">Выберите услугу</div>
             </div>
-            <div class="app-step app-step-2 active">
+            <div class="app-step app-step-2">
               <div class="app-step-count">2.</div>
-              <div class="app-step-name">Выберите точку обслуживания</div>
+              <div class="app-step-name point-city">Выберите точку обслуживания</div>
             </div>
             <div class="app-step app-step-3">
               <div class="app-step-count">3.</div>
@@ -126,7 +128,23 @@
             <div id="selectAddr" class="addr-map zapis-map">
               <img src="images/zapis/map.jpg" alt="">
   
-              <div class="addr-overlay">
+              <div class="addr-overlay active">
+                <div class="addr-service active">
+                  <div class="addr-heading">Услуги</div>
+                  <div class="addr-service-list">
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-1"><span>Шиномонтаж</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-2"><span>Сезонная смена шин</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-3"><span>Правка диска</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-4"><span>Дошиповка зимней шины</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-5"><span>Ремонт шины</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-6"><span>Накачка азотом</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-7"><span>Сезонное храниние</span></a></div>
+                    <div class="addr-service-item"><a href="javascript:void(0)" class="addr-service-item-btn srv-8"><span>Технологическая мойка</span></a></div>
+                  </div>
+                </div>
+                <div class="addr-map-select">
+                  <div id="addSelectPoint"></div>
+                </div>
                 <div class="addr-date" id="selectDate"></div>
                 <div class="addr-time">
                   <div class="addr-heading">6 августа</div>
@@ -185,14 +203,22 @@
               </div>
   
               <div class="addr-map-bar app-zapis">
-                <div class="addr-bar-step addr-bar-step-1 active">
+                <div class="addr-bar-step addr-bar-step-0 active">
                   <div class="addr-map-col">
-                    <div class="addr-map-city">Горьковское шоссе, 49</div>
+                    <div class="addr-srv">Выберите услугу</div>
+                  </div>
+                  <div class="addr-map-col">
+                    <a href="javascript:void(0)" class="addr-map-button button-default button-hover select-srv disabled">Выбрать</a>
+                  </div>
+                </div>
+                <div class="addr-bar-step addr-bar-step-1">
+                  <div class="addr-map-col">
+                    <div class="addr-map-city">Выберите адрес</div>
                     <!-- <div class="addr-map-time">6 августа</div> -->
                   </div>
                   <div class="addr-map-col">
                     <!-- <a href="javascript:void(0)" class="addr-map-change-point button-default button-border">Изменить точку</a> -->
-                    <a href="javascript:void(0)" class="addr-map-button button-default button-hover select-point">Выбрать</a>
+                    <a href="javascript:void(0)" class="addr-map-button button-default button-hover disabled select-point">Выбрать</a>
                   </div>
                 </div>
                 <div class="addr-bar-step addr-bar-step-2">
@@ -227,10 +253,10 @@
                 </div>
 
                 <div class="addr-bar-step addr-bar-step-5">
-                  <div class="addr-map-col">
+                  <div class="addr-map-col addr-map-col-clear">
                     <div class="addr-map-route">Маршрут</div>
                   </div>
-                  <div class="addr-map-col">
+                  <div class="addr-map-col addr-map-col-clear">
                     <a href="javascript:void(0)" class="addr-map-link button-default button-border">2ГИС</a>
                     <a href="javascript:void(0)" class="addr-map-link button-default button-border">Яндекс Карты</a>
                     <a href="javascript:void(0)" class="addr-map-link button-default button-border google-m">Google Карты</a>
@@ -244,30 +270,7 @@
     </div>
   </div>
 
-  <div class="section section-advantage" style="display: none">
-    <div class="container">
-      <div class="top-list row">
-        <div class="top-list-item col-lg-3">
-          <div class="top-list-icon"><img src="images/top-list/1.svg" alt="1"></div>
-          <div class="top-list-name">Работаем 24 часа</div>
-        </div>
-        <div class="top-list-item col-lg-3">
-          <div class="top-list-icon"><img src="images/top-list/3.svg" alt="2"></div>
-          <div class="top-list-name">33 пункта обслуживания</div>
-        </div>
-        <div class="top-list-item col-lg-3">
-          <div class="top-list-icon"><img src="images/top-list/4.svg" alt="4"></div>
-          <div class="top-list-name">Качественный сервис</div>
-        </div>
-        <div class="top-list-item col-lg-3">
-          <div class="top-list-icon"><img src="images/top-list/2.svg" alt="3"></div>
-          <div class="top-list-name">Онлайн запись</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section section-contacts contacts-page" style="display: none">
+  <div class="section section-contacts contacts-page">
     <div class="container">
       <div class="row row-contacts">
         <div class="col-lg-3 col-contact-item">
@@ -325,7 +328,7 @@
     </div>
   </div>
 
-  <div class="footer" style="display: none">
+  <div class="footer">
     <div class="container">
       <div class="footer-col">
         <a href="/" class="footer-logo">

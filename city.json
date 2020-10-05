@@ -1,0 +1,275 @@
+{
+    "code": "kazan",
+    "name": "Казань",
+    "supply_manager_id": 3,
+    "pt1": "55.797211",
+    "pt2": "49.157461",
+    "zoom": 11,
+    "timezone": "3.0",
+    "managers": [],
+    "offices": [{
+        "id": 106,
+        "addr": "ул. Магистральная 33, к3",
+        "phone": "+7 (953) 499-66-75",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.745495",
+        "pt2": "49.104854",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 89,
+        "addr": "ул. Родина 30, к3",
+        "phone": "+7 (952) 048-98-26",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.7683252",
+        "pt2": "49.2106408",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 82,
+        "addr": "ул. Бирюзовая 38 ",
+        "phone": "+7 (900) 328-84-95",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.819571",
+        "pt2": "48.87486",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 49,
+        "addr": "Сибирский тракт 51а ",
+        "phone": "+7 (952) 038-90-57",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.837702",
+        "pt2": "49.195401",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 39,
+        "addr": "Осиново, ул. Садовая 9",
+        "phone": "+7 (953) 499-66-78",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.87337058",
+        "pt2": "48.8831494",
+        "register_enabled": true,
+        "managers": [{
+            "name": "",
+            "phone": "+7(953) 499-66-78",
+            "photo": ""
+        }]
+    }, {
+        "id": 52,
+        "addr": "ул. Зорге 31а",
+        "phone": "+7 (952) 048-98-25",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.75928536",
+        "pt2": "49.19380226",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 81,
+        "addr": "ул. Мавлютова 45а",
+        "phone": "+7 (952) 048-96-87",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.7433",
+        "pt2": "49.1935",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 88,
+        "addr": "ул. Тэцевская 211в",
+        "phone": "+7 (900) 323-99-82",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.859468",
+        "pt2": "49.016699",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 76,
+        "addr": "Мамадышский тракт 8а",
+        "phone": "+7 (952) 038-89-48",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.79614885",
+        "pt2": "49.22217786",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 94,
+        "addr": "ул. Аделя Кутуя 86/7",
+        "phone": "+7 (927) 444-98-42",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.78147318",
+        "pt2": "49.18983576",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 112,
+        "addr": "ул. Дементьева 72",
+        "phone": "+7 (952) 048-96-84",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.861946",
+        "pt2": "49.109207",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 78,
+        "addr": "Проспект Победы 155а",
+        "phone": "+7 (900) 322-04-88",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.7987155",
+        "pt2": "49.21206288",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 91,
+        "addr": "Проспект Победы 50г",
+        "phone": "+7 (952) 041-90-11",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.74743266",
+        "pt2": "49.20458203",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 102,
+        "addr": "ул. Васильченко 9а (МЕГА шиномонтаж)",
+        "phone": "+7 (953) 499-68-52",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.83749981",
+        "pt2": "49.03492652",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 100,
+        "addr": "ул. Космонавтов 46б",
+        "phone": "+7 (927) 248-82-37",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.7940641",
+        "pt2": "49.1998786",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 90,
+        "addr": "ул. Мусина 61, к1",
+        "phone": "+7 (939) 742-99-72",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.833696",
+        "pt2": "49.121584",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 32,
+        "addr": "Проспект Ямашева 28а, к1 (под мостом) ",
+        "phone": "+7 (952) 048-98-23",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.827242",
+        "pt2": "49.094547",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 176,
+        "addr": "ул. Габдуллы Тукая 115а",
+        "phone": "+7 (900) 323-99-86",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.76463662",
+        "pt2": "49.12725011",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 174,
+        "addr": "ул. Нариманова 29б",
+        "phone": "+7 (952) 048-80-69",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.785236",
+        "pt2": "49.103591",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 252,
+        "addr": "Оренбургский тракт 170",
+        "phone": "+7 (962) 576-08-20",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.724296",
+        "pt2": "49.195594",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 247,
+        "addr": "Клара Цеткин 8б",
+        "phone": "+7 (927) 430-09-88",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.799843",
+        "pt2": "49.066229",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 248,
+        "addr": "ул. Беломорская 69а",
+        "phone": "+7 (927) 430-09-79",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.866324",
+        "pt2": "49.031007",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 284,
+        "addr": "ул. Кулахметова 30",
+        "phone": "+7 (965) 597-20-67",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.831074",
+        "pt2": "49.062132",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 285,
+        "addr": "Осиново, ул. Садовая 2а",
+        "phone": "+7 (927) 430–09–85",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.869050",
+        "pt2": "48.884990",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 87,
+        "addr": "Проспект Победы 72/1",
+        "phone": "+7 (952) 038-86-48",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.75429167",
+        "pt2": "49.21812505",
+        "register_enabled": true,
+        "managers": []
+    }, {
+        "id": 237,
+        "addr": "ул. Техническая 64а",
+        "phone": "+7 (927) 033-05-76",
+        "photo": "",
+        "ya_map": "",
+        "pt1": "55.74760863",
+        "pt2": "49.13153257",
+        "register_enabled": true,
+        "managers": []
+    }]
+}
