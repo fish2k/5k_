@@ -684,7 +684,7 @@
     right: 30px;
   }
 
-  .section-top::before {
+  /* .section-top::before {
     position: absolute;
     content: '';
     top: 0;
@@ -697,7 +697,7 @@
     opacity: 0.7;
 
     pointer-events: none;
-  }
+  } */
 
   .section-seo {
     position: relative;
@@ -1055,6 +1055,12 @@
     font-size: 24px;
   }
 
+  .addr-service-item:nth-of-type(even),
+  .addr-service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   .row-points {
     margin-top: 15px;
   }
@@ -1250,10 +1256,6 @@
   .top-list-item {
     padding-left: 15px !important;
     padding-right: 15px !important;
-  }
-
-  .section-top::before {
-    display: none;
   }
 
   .section-top {
