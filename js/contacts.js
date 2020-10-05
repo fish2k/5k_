@@ -17,7 +17,7 @@ ymaps.ready(function () {
     $.ajax({
         //type: "POST",
         //url: '/ajax/get-offices?city_id='+city_id,
-        url: '/5k_/city.json',
+        url: '/city.json',
         data: ({}),
         dataType: 'json',
         complete:function(){},
@@ -35,7 +35,7 @@ ymaps.ready(function () {
                     d:key.pt2,
                 },{
                     iconLayout: "default#image",
-                    iconImageHref: key.register_enabled ? "/5k_/images/5k-blue.svg" : "/5k_/images/5k-red.svg",
+                    iconImageHref: key.register_enabled ? "/images/5k-blue.svg" : "/images/5k-red.svg",
                     iconImageSize: [21, 21],
                     iconImageOffset: [0, 0],
 
@@ -48,7 +48,10 @@ ymaps.ready(function () {
                 $('.contacts-addr-list').append([
                     `<div class="contacts-addr-item addr-item" data-city-id="${key.id}">
                         <div class="contacts-addr-name">${key.addr}</div>
-                        <div class="contacts-addr-button"></div>
+                        <div class="contacts-addr-btns">
+                            <div class="contacts-addr-button button-tel"></div>
+                            <div class="contacts-addr-button"></div>
+                        </div>
                     </div>`
                 ]);
 
@@ -106,8 +109,7 @@ ymaps.ready(function () {
                 window.activeMapMark = value;
                 // перехват точки по ключу key.addr
                 $('.addr-map-city').text(value.properties.get('addr'));
-                addressButton.removeClass('btn-disabled');
-                addressButton.addClass('button-red');
+                addressButton.removeClass('disabled');
                 addressButton.attr('data-id',value.properties.get('addr'));
 
                 $('.addr-step-1').addClass('active');
@@ -135,7 +137,7 @@ ymaps.ready(function () {
 });
 
 addressButton.click(function () {
-    $(this).addClass('btn-disabled');
+    $(this).addClass('disabled');
 
     $('.addr-step-1').removeClass('active');
     $('.addr-step-2').addClass('active');

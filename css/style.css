@@ -3144,3 +3144,14 @@ a.contacts-name:hover::before {
 .contacts-contacts {
   padding-top: 37px;
 }
+
+.contacts-addr-btns {
+  display: flex;
+}
+
+.button-tel {
+  margin-right: 20px;
+  background-image: url(../images/phone-light.svg);
+  background-size: 23px;
+  background-color: #c5c5c5;
+}
