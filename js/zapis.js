@@ -65,7 +65,7 @@ $(document).ready(function () {
                         window.activeMapMark = point,
                         
                         // перехват точки по ключу key.addr
-                        $('.addr-map-city, .point-city').text(key.addr);
+                        $('.addr-map-city, .point-city, .final-city').text(key.addr);
                         $('.select-point').removeClass('disabled')
     
                         point.options.set({

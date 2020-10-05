@@ -2,11 +2,11 @@ var addressButton = $('.addr-map-button');
 
 var myCollection = [];
 ymaps.ready(function () {
-    var city_coords_1 = $('input[name="city_coords_1"]').val();
-    var city_coords_2 = $('input[name="city_coords_2"]').val();
+    // var city_coords_1 = $('input[name="city_coords_1"]').val();
+    // var city_coords_2 = $('input[name="city_coords_2"]').val();
 
     var contactMap = new ymaps.Map('contactMap',  {
-        center: [city_coords_1, city_coords_2],
+        center: [55.797211, 49.157461],
         zoom: 11,
         // controls: ['zoomControl'],
         // behaviors: ['drag','ScrollZoom']
@@ -20,14 +20,13 @@ ymaps.ready(function () {
         url: '/city.json',
         data: ({}),
         dataType: 'json',
-        complete:function(){
-        },
+        complete:function(){},
         success: function (response) {
             var data = response;
-            console.log(response);
+            //console.log(response);
             var getOffices = data.offices;
             getOffices.forEach(function(key) {
-                console.log(key);
+                //console.log(key);
                 var point = new ymaps.Placemark([key.pt1, key.pt2],{
                     key_my:key.id,
                     addr:key.addr,
@@ -46,6 +45,13 @@ ymaps.ready(function () {
                     return contactMap.container.fitToViewport()
                 });
 
+                $('.contacts-addr-list').append([
+                    `<div class="contacts-addr-item addr-item" data-city-id="${key.id}">
+                        <div class="contacts-addr-name">${key.addr}</div>
+                        <div class="contacts-addr-button"></div>
+                    </div>`
+                ]);
+
                 point.events.add("click", function(e) {
                     window.activeMapMark && window.activeMapMark.options.set({
                         iconImageSize: [21, 21],
@@ -54,8 +60,7 @@ ymaps.ready(function () {
                         window.activeMapMark = point;
                         // перехват точки по ключу key.addr
                         $('.addr-map-city').text(key.addr);
-                        addressButton.removeClass('btn-disabled');
-                        addressButton.addClass('button-red');
+                        addressButton.removeClass('disabled');
                         addressButton.attr('data-id',key.id);
 
                         $('.addr-step-1').addClass('active');

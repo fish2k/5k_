@@ -248,11 +248,11 @@ img {
 }
 
 .link-hovered::before {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .link-hovered:hover::before {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .header-links-link.link-hovered {
@@ -2744,19 +2744,6 @@ select.addr-form-input {
   color: var(--bluee)
 }
 
-.addr-map-city {
-  padding-left: 21px;
-  background-image: url(../images/contacts/pin-light.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  font-weight: var(--book);
-
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .addr-service {
   padding: 28px 0 0 50px;
   display: none;
@@ -2968,20 +2955,6 @@ select.addr-form-input {
   object-fit: cover;
 }
 
-.addr-map-bar {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  left: 20px;
-
-  background-color: var(--dark-light);
-
-
-  padding: 20px;
-  border-radius: 25px;
-  color: #fff;
-}
-
 .addr-map-city {
   padding-left: 21px;
   background-image: url(../images/contacts/pin-light.svg);
@@ -2992,7 +2965,7 @@ select.addr-form-input {
 }
 
 .contacts-req {
-  margin-top: 65px;
+  margin-top: 44px;
   font-weight: var(--book);
   padding-bottom: 150px;
 }
@@ -3059,13 +3032,13 @@ select.addr-form-input {
   background-color: #ededed;
 }
 
-.contacts-icon {
+/* .contacts-icon {
   flex: 0 0 48px;
   max-width: 48px;
-}
+} */
 
 .row-contacts {
-  margin-top: 42px;
+  margin-top: 59px;
 }
 
 .contacts-item {
@@ -3112,4 +3085,59 @@ a.contacts-name:hover::before {
   background-color: #24272c;
   background-image: url(../images/btn-arrow-hover.svg);
   color: #fff;
+}
+
+.addr-map-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addr-step-1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addr-step {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.addr-step.active {
+  display: flex;
+}
+
+.contacts-hint {
+  margin-top: 15px;
+}
+
+.contact-hint-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.contact-hint-item span {
+  padding-top: 3px;
+}
+
+.contact-hint-item img {
+  margin-right: 5px;
+}
+
+.col-contact-service {
+  margin-top: 52px;
+}
+
+.contacts-contacts {
+  padding-top: 37px;
 }
