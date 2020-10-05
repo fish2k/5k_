@@ -1,15 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="940" height="500" viewBox="0 0 940 500">
+<svg id="slider-arrow-bg" xmlns="http://www.w3.org/2000/svg" width="940" height="500" viewBox="0 0 940 500">
   <defs>
     <style>
       .cls-1 {
-        fill: #ededed;
+        fill: #525252;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <g>
-    <path d="M14.808,0.009 L225.363,0.009 L400.010,233.331 L216.055,499.991 L0.016,499.991 L182.895,234.131 L14.808,0.009 L14.808,0.009 Z" class="cls-1"/>
-    <path d="M297.808,0.009 L508.363,0.009 L683.010,233.331 L499.055,499.991 L283.016,499.991 L465.895,234.131 L297.808,0.009 L297.808,0.009 Z" class="cls-1"/>
-    <path d="M580.808,0.009 L791.363,0.009 L966.010,233.331 L782.055,499.991 L566.016,499.991 L748.895,234.131 L580.808,0.009 L580.808,0.009 Z" class="cls-1"/>
-  </g>
+  <path id="_1" data-name="1" class="cls-1" d="M994.808,937.009H1205.36l174.65,233.321-183.96,266.66H980.016l182.874-265.86L994.808,937.009h0Z" transform="translate(-980 -937)"/>
+  <path id="_2" data-name="2" class="cls-1" d="M1277.81,937.009h210.55l174.65,233.321-183.96,266.66H1263.02l182.87-265.86L1277.81,937.009h0Z" transform="translate(-980 -937)"/>
+  <path id="_3" data-name="3" class="cls-1" d="M1560.81,937.009h210.55l174.65,233.321-183.96,266.66H1546.02l182.87-265.86L1560.81,937.009h0Z" transform="translate(-980 -937)"/>
 </svg>

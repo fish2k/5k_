@@ -270,10 +270,11 @@ img {
 .section-top {
   position: relative;
   padding-top: 94px;
-  background-color: #f3f4f4;
+  background-color: var(--dark-light);
   background-image: url(../images/top-image.png);
   background-position: -2px 175px;
   background-repeat: no-repeat;
+  color: #fff;
 
   overflow: hidden;
 }
@@ -448,7 +449,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: var(--dark-light);
+  background-color: #24272c;
   color: #fff;
 }
 
@@ -3105,4 +3106,10 @@ a.contacts-name:hover::before {
 
 #contactMap {
   height: 100%;
+}
+
+.top-button {
+  background-color: #24272c;
+  background-image: url(../images/btn-arrow-hover.svg);
+  color: #fff;
 }
