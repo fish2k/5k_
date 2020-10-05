@@ -1560,6 +1560,29 @@
     flex: 0 0 calc(100% - 66px);
     max-width: calc(100% - 66px);
   }
+
+  .section-advantage-services {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .section-stock-services {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .section-contacts {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .row-contacts {
+    margin-top: 0;
+  }
+
+  .contact-form {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1569,6 +1592,11 @@
 
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .stock-item {
+    margin-bottom: 30px;
+    height: auto;
   }
 
   .row-stock {
