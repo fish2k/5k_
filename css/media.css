@@ -1055,6 +1055,10 @@
     font-size: 24px;
   }
 
+  .feedback-agree span {
+    font-size: 11px;
+  }
+
   .addr-service-item:nth-of-type(even),
   .addr-service-item {
     flex: 0 0 50%;
@@ -1564,6 +1568,10 @@
   .section-advantage-services {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .vac-li-item {
+    background-position: 0 2px;
   }
 
   .section-stock-services {
