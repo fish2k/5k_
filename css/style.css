@@ -16,9 +16,9 @@
   --bluee: #192d6b;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 input,
 textarea {
