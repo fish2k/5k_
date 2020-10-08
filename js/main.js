@@ -29,7 +29,7 @@ $(document).ready(function() {
             $(window).scroll(function () {
                 var st = $(this).scrollTop()
 
-                if (st >= 600) {
+                if (st >= headerOffset) {
                     $('.header-fixed-placeholder').css({
                         height: headerOffset + 'px'
                     })

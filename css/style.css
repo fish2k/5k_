@@ -619,18 +619,6 @@ img {
   fill-rule: evenodd;
 }
 
-.catalog-product-icon .cls-1 {
-  fill: #fc352e;
-}
-
-.catalog-product-icon .cls-1, .cls-2 {
-  fill-rule: evenodd;
-}
-
-.catalog-product-icon .cls-2 {
-  fill: #131313;
-}
-
 .catalog-product-photo {
   flex: 0 0 235px;
   max-width: 235px;
@@ -680,6 +668,10 @@ i.rub {
 .catalog-product-name {
   font-size: 20px;
   font-weight: var(--book);
+}
+
+.catalog-product-name svg {
+  max-width: 20px;
 }
 
 .catalog-product-info {
@@ -1111,7 +1103,7 @@ i.rub {
 
 .header-fixed .header-links {
   padding-top: 0 !important;
-  padding-left: 100px !important;
+  padding-left: 190px !important;
   display: flex;
   align-items: center;
 }
@@ -1121,11 +1113,10 @@ i.rub {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 60px;
-  background-color: var(--accent);
+  width: 150px;
 
-  background-image: url(../images/logo-min.svg);
-  background-position: center center;
+  background-image: url(../images/vac/logo-vac.svg);
+  background-position: right center;
   background-repeat: no-repeat;
 }
 
@@ -1133,7 +1124,7 @@ i.rub {
   display: block;
 }
 
-.header-fixed .fixed-logo::before {
+/* .header-fixed .fixed-logo::before {
   position: absolute;
   content: '';
   top: 0;
@@ -1141,7 +1132,7 @@ i.rub {
   left: -225px;
   width: 225px;
   background-color: var(--accent);
-}
+} */
 
 .header-fixed .header-nav-drop::before {
   top: 21px;
