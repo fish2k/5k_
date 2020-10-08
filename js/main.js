@@ -30,14 +30,14 @@ $(document).ready(function() {
                 var st = $(this).scrollTop()
 
                 if (st >= headerOffset) {
-                    $('.header-fixed-placeholder').css({
-                        height: headerOffset + 'px'
-                    })
+                    // $('.header-fixed-placeholder').css({
+                    //     height: headerOffset + 'px'
+                    // })
                     headerMain.addClass('header-fixed')
                 } else {
-                    $('.header-fixed-placeholder').css({
-                        height: 0
-                    })
+                    // $('.header-fixed-placeholder').css({
+                    //     height: 0
+                    // })
                     headerMain.removeClass('header-fixed')
                 }
             })
