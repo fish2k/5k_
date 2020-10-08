@@ -17,7 +17,7 @@ ymaps.ready(function () {
     $.ajax({
         //type: "POST",
         //url: '/ajax/get-offices?city_id='+city_id,
-        url: '/city.json',
+        url: '/5k_/city.json',
         data: ({}),
         dataType: 'json',
         complete:function(){},
@@ -35,7 +35,7 @@ ymaps.ready(function () {
                     d:key.pt2,
                 },{
                     iconLayout: "default#image",
-                    iconImageHref: key.register_enabled ? "/images/5k-blue.svg" : "/images/5k-red.svg",
+                    iconImageHref: key.register_enabled ? "/5k_/images/5k-blue.svg" : "/5k_/images/5k-red.svg",
                     iconImageSize: [21, 21],
                     iconImageOffset: [0, 0],
 
