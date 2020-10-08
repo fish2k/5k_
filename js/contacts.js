@@ -118,9 +118,9 @@ ymaps.ready(function () {
                 $('.contacts-addr-item').removeClass('active');
                 $('.contacts-addr-item[data-city-id="' + value.properties.get('id') + '"]').addClass('active')
 
-                $('.dg-link').attr('href', 'https://2gis.ru/kazan/search/' + value.properties.get('addr') + ',' + 'asd')
-                $('.gg-link').attr('href', 'https://google.ru/maps/place/' + value.properties.get('addr') + ',' + 'asd')
-                $('.ym-link').attr('href', 'https://yandex.ru/maps/43/kazan/?mode=search&source=morda&text='+ value.properties.get('addr') + ',' + 'asd')
+                $('.dg-link').attr('href', 'https://2gis.ru/kazan/search/' + value.properties.get('addr'))
+                $('.gg-link').attr('href', 'https://google.ru/maps/place/' + value.properties.get('addr'))
+                $('.ym-link').attr('href', 'https://yandex.ru/maps/43/kazan/?mode=search&source=morda&text='+ value.properties.get('addr'))
 
                 value.options.set({
                     iconImageSize: [35, 35],
