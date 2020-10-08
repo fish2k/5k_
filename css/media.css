@@ -11,6 +11,11 @@
     max-width: 100%;
   }
 
+  .header-nav-sub-list {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .addr-time-item {
     padding: 10px 0px 10px;
   }

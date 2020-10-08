@@ -605,6 +605,32 @@ img {
   margin-top: 65px;
 }
 
+.catalog-product-item:hover .catalog-product-icon .cls-2 {
+  fill: #fff;
+}
+
+.catalog-product-icon-summer .cls-1 {
+  fill: #f6df19 !important;
+  fill-rule: evenodd;
+}
+
+.catalog-product-snow .cls-1 {
+  fill: #009cff;
+  fill-rule: evenodd;
+}
+
+.catalog-product-icon .cls-1 {
+  fill: #fc352e;
+}
+
+.catalog-product-icon .cls-1, .cls-2 {
+  fill-rule: evenodd;
+}
+
+.catalog-product-icon .cls-2 {
+  fill: #131313;
+}
+
 .catalog-product-photo {
   flex: 0 0 235px;
   max-width: 235px;
@@ -1165,6 +1191,11 @@ i.rub {
   flex-wrap: wrap;
   align-items: flex-start;
   background-color: #fff;
+}
+
+.header-nav-sub-list-full {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .header-nav-sub-link {
