@@ -1216,7 +1216,26 @@
 
   #selectAddr {
     overflow: visible;
-    margin-bottom: 90px;
+    margin-bottom: 0;
+    min-height: 400px;
+    height: auto;
+  }
+
+  .addr-overlay {
+    position: static;
+    border-bottom: 1px solid #f3f4f4;
+  }
+
+  .row-online-app {
+    padding-bottom: 0;
+  }
+
+  .addr-overlay #addSelectPoint {
+    height: 350px;
+  }
+
+  .contacts-page {
+    margin-top: 0;
   }
 
   .addr-map-bar .button-border {
@@ -1358,7 +1377,9 @@
 
   .addr-service-list {
     overflow-y: auto;
-    max-height: 233px;
+    max-height: 333px;
+    margin-bottom: 15px;
+    margin-right: 1px;
   }
 
   .addr-service-item-btn {
@@ -1385,10 +1406,11 @@
   }
 
   .addr-map-bar {
-    top: 100%;
-    left: 0;
-    bottom: auto;
-    right: 0;
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    right: unset;
 
     padding: 15px 10px;
 
