@@ -1564,6 +1564,7 @@ i.rub {
 .section-vac-end {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .section-vac-col {
