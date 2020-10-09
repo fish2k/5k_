@@ -1215,6 +1215,17 @@ i.rub {
   max-width: 46%;
 }
 
+.header-nav-sub-list-full {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header-nav-sub-list-full .header-nav-sub-link:nth-of-type(odd),
+.header-nav-sub-list-full .header-nav-sub-link {
+  flex: unset;
+  max-width: none;
+}
+
 .header-nav-side {
   background-color: var(--dark-light);
   color: #fff;

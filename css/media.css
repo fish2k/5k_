@@ -702,9 +702,9 @@
     right: -280px;
     bottom: 0;
     width: 280px;
-    height: 100%;
 
     padding-top: 15px;
+    padding-bottom: 30px;
 
     background-color:var(--dark-light);
 
@@ -1228,6 +1228,11 @@
 
   .row-online-app {
     padding-bottom: 0;
+  }
+
+  .section-vac-end {
+    display: block;
+    text-align: center;
   }
 
   .addr-overlay #addSelectPoint {
