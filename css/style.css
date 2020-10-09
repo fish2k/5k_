@@ -1047,7 +1047,8 @@ i.rub {
   position: absolute;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 4px;
+  border-radius: 5px;
 
   background-color: #fff;
 
@@ -1055,19 +1056,19 @@ i.rub {
 }
 
 .line-1 {
-  top: 3px;
+  top: 1px;
 }
 
 .line-2 {
-  top: 13px;
+  top: 11px;
 }
 
 .line-3 {
-  top: 23px;
+  top: 21px;
 }
 
 .state-nav .line-1 {
-  top: 50%;
+  top: calc(50% - 2px);
   transform: rotate(135deg)
 }
 
@@ -1076,8 +1077,13 @@ i.rub {
 }
 
 .state-nav .line-3 {
-  top: 50%;
+  top: calc(50% - 2px);
   transform: rotate(-135deg)
+}
+
+.state-nav .burger-line {
+  left: -3px;
+  right: -3px;
 }
 
 .overlay {
@@ -1250,7 +1256,7 @@ i.rub {
 
 .breadcrumbz-item {
   font-size: 14px;
-  font-weight: var(--book);
+  font-weight: var(--light);
   color: #898682;
   margin-right: 27px;
   position: relative;
@@ -3142,6 +3148,10 @@ select.addr-form-input {
   margin-top: 59px;
 }
 
+.row-contact {
+  margin-top: 59px;
+}
+
 .contacts-item {
   display: flex;
   align-items: flex-end;
@@ -3256,4 +3266,87 @@ a.contacts-name:hover::before {
 
 .seo-link:hover::before {
   opacity: 1 !important;
+}
+
+.r-nav {
+  display: none;
+}
+
+.header-info {
+  line-height: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-info:hover .header-info-link {
+  color: var(--red-light)
+}
+
+.header-info-icon {
+  display: flex;
+  align-items: center;
+
+  flex: 0 0 14px;
+  max-width: 14px;
+  height: 14px;
+}
+
+.header-info-body {
+  flex: 0 0 calc(100% - 14px);
+  max-width: calc(100% - 14px);
+  padding-left: 10px;
+}
+
+.header-info-link {
+  font-weight: var(--book);
+
+  color: var(--dark);
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-info-link:hover {
+  text-decoration: none;
+  color: var(--accent-hover);
+}
+
+.link-light::before,
+.about-link::before,
+.header-info-link::before {
+  position: absolute;
+  content: '..............................................';
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: var(--book);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.header-info-link-callback::before {
+  opacity: 1;
+}
+
+.header-info-link:hover::before {
+  opacity: 1;
+}
+
+.header-info-link-callback:hover::before {
+  opacity: 0;
+}
+
+.header-info-link-city::before {
+  opacity: 1;
+}
+
+.header-info-link-city:hover::before {
+  opacity: 0;
+}
+
+.header-info-link img {
+  margin-right: 10px;
 }
