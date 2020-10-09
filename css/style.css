@@ -1471,6 +1471,7 @@ i.rub {
 
 .service-content {
   margin-top: 65px;
+  margin-bottom: 150px;
 }
 
 .service-content p {
@@ -1545,7 +1546,8 @@ i.rub {
 
 .online-sticky {
   position: sticky;
-  top: 25px;
+  top: 90px;
+  margin-bottom: 30px;
 }
 
 .row-middle {
@@ -2077,7 +2079,8 @@ select.input-styles {
 }
 
 .review-date {
-  font-weight: var(--light)
+  font-weight: var(--light);
+  color: var(--dark-light)
 }
 
 .review-content {
@@ -2132,7 +2135,7 @@ textarea.leave-review-input {
 
 .leave-review-input:hover,
 .leave-review-input:focus {
-  border-color: var(--red-light)
+  border-color: var(--dark-light)
 }
 
 .leave-review-input::placeholder {
@@ -2295,7 +2298,7 @@ textarea.leave-review-input {
 .reviews-show-rate-link {
   vertical-align: bottom;
   display: inline-block;
-  color: var(--dark);
+  color: var(--dark-light);
   font-size: 14px;
   font-weight: var(--book);
   position: relative;
@@ -2316,16 +2319,12 @@ textarea.leave-review-input {
 
 .reviews-show-rate-link:hover {
   text-decoration: none;
-  color: var(--dark)
-}
-
-.reviews-show-rate-link:hover::before {
-  opacity: 0;
+  color: var(--accent)
 }
 
 .detail-score-sticky {
   position: sticky;
-  top: 15px;
+  top: 80px;
   left: 0;
 
   background-color: var(--dark-light);
@@ -2333,7 +2332,7 @@ textarea.leave-review-input {
 
   /* padding-left: 50px; */
   padding-top: 50px;
-  padding-bottom: 69px;
+  padding-bottom: 50px;
   padding-left: 43px;
   padding-right: 45px;
 
@@ -2442,6 +2441,7 @@ textarea.leave-review-input {
 
 .detail-score-btn {
   margin-top: 27px;
+  background-color: #fff;
 }
 
 .page-reviews {
@@ -2848,7 +2848,7 @@ select.addr-form-input {
 
 .addr-map-bar .button-border:hover {
   background-color: #fff;
-  color: var(--bluee)
+  color: var(--dark)
 }
 
 .addr-service {
@@ -2858,6 +2858,10 @@ select.addr-form-input {
 
 .addr-service.active {
   display: block;
+}
+
+.addr-service .addr-heading {
+  margin-left: -50px;
 }
 
 .addr-service-list {
@@ -3090,6 +3094,7 @@ select.addr-form-input {
 .contacts-addr-list {
   max-height: 460px;
   overflow-y: scroll;
+  padding-right: 15px;
 }
 
 .contacts-addr-list::-webkit-scrollbar {
@@ -3117,17 +3122,26 @@ select.addr-form-input {
 .contacts-addr-button {
   width: 50px;
   height: 50px;
-  background-color: var(--dark-light);
+  background-color: #c5c5c5;
   border-radius: 50%;
 
   background-image: url(../images/contacts/pin.svg);
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0;
+
+  cursor: pointer;
+}
+
+.contacts-addr-button:hover {
+  background-color: var(--dark-light);
+}
+
+.contacts-addr-item.active .contacts-addr-button:not(.button-tel) {
+  background-color: var(--red-light);
 }
 
 .contacts-addr-item.active .contacts-addr-button {
-  background-color: var(--red-light);
   opacity: 1;
 }
 
@@ -3135,6 +3149,7 @@ select.addr-form-input {
   opacity: 1;
 }
 
+.contacts-addr-item.active,
 .contacts-addr-item:hover {
   background-color: #ededed;
 }
@@ -3262,6 +3277,11 @@ a.contacts-name:hover::before {
   background-image: url(../images/phone-light.svg);
   background-size: 23px;
   background-color: #c5c5c5;
+}
+
+.button-tel:hover {
+  background-color: var(--accent);
+  opacity: 1;
 }
 
 .seo-link:hover::before {

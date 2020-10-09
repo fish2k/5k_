@@ -11,6 +11,10 @@
     max-width: 100%;
   }
 
+  .addr-service .addr-heading {
+    margin-left: -15px;
+  }
+
   .header-nav-sub-list {
     flex: 0 0 100%;
     max-width: 100%;
@@ -466,7 +470,7 @@
   }
 
   .zapis-map {
-    height: 480px;
+    height: 500px;
   }
 
   .review-item-user {
@@ -1196,6 +1200,81 @@
     margin-bottom: 0;
   }
 
+  #selectAddr {
+    overflow: visible;
+    margin-bottom: 90px;
+  }
+
+  .addr-map-bar .button-border {
+    text-align: center;
+  }
+
+  .datepicker-inline .custom-picker {
+    width: 290px;
+  }
+
+  .datepicker--cell-day {
+    height: 32px;
+  }
+
+  .addr-form-label {
+    margin-bottom: 10px;
+  }
+
+  .addr-form-label-abs {
+    top: 17px;
+  }
+
+  .button-default:not(.button-arrow) {
+    text-align: center;
+  }
+
+  .service-content {
+    margin-bottom: 30px;
+  }
+
+  .online-icon {
+    max-width: 80px;
+  }
+
+  .online-title {
+    font-size: 16px;
+  }
+
+  .online-foot {
+    margin-top: 30px;
+  }
+
+  .addr-form-input {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 47px;
+    line-height: 49px;
+  }
+
+  select.addr-form-input {
+    background-image: url(../images/zapis/arrow-down-gray.svg);
+  }
+
+  .addr-map-col:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 14px;
+  }
+
+  .addr-map-city, .addr-map-time {
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    flex: unset;
+    max-width: none;
+  }
+
   .row-slider-top {
     margin-top: 80px;
   }
@@ -1206,8 +1285,8 @@
 
   .addr-service-item:nth-of-type(even),
   .addr-service-item {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .row-points {
@@ -1263,13 +1342,14 @@
     text-align: center;
   }
 
+  .addr-service-list {
+    overflow-y: auto;
+    max-height: 233px;
+  }
+
   .addr-service-item-btn {
-    background-image: none !important;
-    padding-left: 15px;
     padding-right: 15px;
-    font-size: 11px;
-    text-align: center;
-    height: 40px;
+    font-size: 12px;
   }
 
   .addr-map {
@@ -1282,11 +1362,17 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .zapis-map {
+    height: 300px;
   }
 
   .addr-map-bar {
+    top: 100%;
     left: 0;
-    bottom: 0;
+    bottom: auto;
     right: 0;
 
     padding: 15px 10px;

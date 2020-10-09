@@ -41,7 +41,7 @@ $(document).ready(function () {
             // });
     
             $.ajax({
-                url: '/5k_/city.json'
+                url: '/city.json'
             }).done(function (data) {
                 //console.log(data);
                 var getOffices = data.offices;
@@ -49,7 +49,7 @@ $(document).ready(function () {
                 getOffices.forEach(function(key) {
                     var point = new ymaps.Placemark([key.pt1, key.pt2],{},{
                         iconLayout: "default#image",
-                        iconImageHref: key.register_enabled ? "/5k_/images/5k-blue.svg" : "/5k_/images/5k-red.svg",
+                        iconImageHref: key.register_enabled ? "/images/5k-blue.svg" : "/images/5k-red.svg",
                         iconImageSize: [21, 21],
                         iconImageOffset: [0, 0]
                     });

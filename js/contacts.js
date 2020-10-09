@@ -17,7 +17,7 @@ ymaps.ready(function () {
     $.ajax({
         //type: "POST",
         //url: '/ajax/get-offices?city_id='+city_id,
-        url: '/5k_/city.json',
+        url: '/city.json',
         data: ({}),
         dataType: 'json',
         complete:function(){},
@@ -35,7 +35,7 @@ ymaps.ready(function () {
                     d:key.pt2,
                 },{
                     iconLayout: "default#image",
-                    iconImageHref: key.register_enabled ? "/5k_/images/5k-blue.svg" : "/5k_/images/5k-red.svg",
+                    iconImageHref: "/images/5k-blue.svg",
                     iconImageSize: [21, 21],
                     iconImageOffset: [0, 0],
 
@@ -49,7 +49,7 @@ ymaps.ready(function () {
                     `<div class="contacts-addr-item addr-item" data-city-id="${key.id}">
                         <div class="contacts-addr-name">${key.addr}</div>
                         <div class="contacts-addr-btns">
-                            <div class="contacts-addr-button button-tel"></div>
+                            <a href="tel:${key.phone}" class="contacts-addr-button button-tel"></a>
                             <div class="contacts-addr-button"></div>
                         </div>
                     </div>`
@@ -104,7 +104,8 @@ ymaps.ready(function () {
             if (city_id == value.properties.get('key_my')){
                 window.activeMapMark && window.activeMapMark.options.set({
                     iconImageSize: [21, 21],
-                    iconImageOffset: [0, 0]
+                    iconImageOffset: [0, 0],
+                    iconImageHref: "/images/5k-blue.svg"
                 });
                 window.activeMapMark = value;
                 // перехват точки по ключу key.addr
@@ -124,7 +125,8 @@ ymaps.ready(function () {
 
                 value.options.set({
                     iconImageSize: [35, 35],
-                    iconImageOffset: [-7, -7]
+                    iconImageOffset: [-7, -7],
+                    iconImageHref: "/images/5k-red.svg"
                 });
 
                 contactMap.setCenter([value.properties.get('sh'), value.properties.get('d')]);
@@ -143,3 +145,6 @@ addressButton.click(function () {
     $('.addr-step-2').addClass('active');
 });
 
+$(document).on('click', '.button-tel', function(evt) {
+    evt.stopPropagation()
+})
