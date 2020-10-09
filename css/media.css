@@ -966,7 +966,17 @@
   }
 
   .vac-image {
-    display: none;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .vac-status {
+    font-size: 18px;
+  }
+
+  .online .button-hover {
+    padding-top: 16px;
+    padding-bottom: 15px;
   }
 
   .vac-body {
@@ -1185,6 +1195,10 @@
 @media (max-width: 480px) {
   .section-heading {
     font-size: 24px;
+  }
+
+  .vac-detail-image {
+    max-width: 55%;
   }
 
   .slider-top-inner::before {
@@ -1462,7 +1476,7 @@
 
   .checklist-vac {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .checklist-item {
@@ -1758,6 +1772,10 @@
 
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .section-vac-col {
+    margin-bottom: 30px;
   }
 
   .service-name {

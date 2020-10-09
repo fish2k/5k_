@@ -51,4 +51,11 @@ $(document).ready(function() {
     });
 
     responsiveHooks($(this).innerWidth());
+
+
+    $(document).on('click', '.gotovac', function (evt) {
+        $('html, body').animate({
+            scrollTop: $('.feedback').offset().top - 100
+        }, 1000)
+    })
 })
