@@ -595,6 +595,33 @@ img {
   display: flex;
   margin-bottom: 30px;
   border: 1px solid #dedfe0;
+
+  position: relative;
+}
+
+.catalog-product-item::before,
+.catalog-product-item::after {
+  position: absolute;
+  content: '';
+
+  border-width: 0 0 50px 50px;
+  border-style: solid;
+  
+
+  pointer-events: none;
+}
+
+.catalog-product-item::before {
+  border-color: white transparent white transparent;
+  bottom: -1px;
+  right: -1px;
+  z-index: 2;
+}
+
+.catalog-product-item::after {
+  border-color: #dedfe0 transparent #dedfe0 transparent;
+  bottom: -1px;
+  right: 0px;
 }
 
 .catalog-product-item .button-default {
@@ -2011,6 +2038,8 @@ select.input-styles {
   max-width: 100%;
   justify-content: flex-end;
   flex-direction: row;
+
+  padding-right: 20px;
 }
 
 .button-border {

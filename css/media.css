@@ -902,7 +902,7 @@
   }
 
   .r-header-online {
-    background-image: url(../images/content-writing.svg);
+    background-image: url(../images/k1.svg);
   }
 
   .r-header-flex {
@@ -1200,6 +1200,15 @@
 @media (max-width: 480px) {
   .section-heading {
     font-size: 20px;
+  }
+
+  .catalog-product-item::before,
+  .catalog-product-item::after {
+    display: none;
+  }
+
+  .serivce-goto {
+    padding-right: 0;
   }
 
   .row-service {
