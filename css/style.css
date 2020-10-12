@@ -3105,11 +3105,11 @@ select.addr-form-input {
 .contacts-addr {
   padding: 20px 15px 20px 20px;
   background-color: #f4f4f4;
-  height: 100%;
+  height: 80%;
 }
 
 .contacts-addr-list {
-  max-height: 460px;
+  max-height: 364px;
   overflow-y: scroll;
   padding-right: 15px;
 }
@@ -3386,4 +3386,8 @@ a.contacts-name:hover::before {
 
 .header-info-link img {
   margin-right: 10px;
+}
+
+.feedback-detail {
+  display: none;
 }

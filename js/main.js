@@ -54,8 +54,16 @@ $(document).ready(function() {
 
 
     $(document).on('click', '.gotovac', function (evt) {
-        $('html, body').animate({
+        $('html, body').stop().animate({
             scrollTop: $('.feedback').offset().top - 100
-        }, 1000)
-    })
+        }, 1000);
+    });
+
+    $(document).on('click', '.goto-feedback', function () {
+        $('.feedback-detail').stop().slideDown();
+
+        $('html, body').stop().animate({
+            scrollTop: $('.feedback-detail').offset().top - 100
+        }, 1000);
+    });
 })

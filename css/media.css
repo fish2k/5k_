@@ -383,6 +383,10 @@
     margin-top: 30px;
   }
 
+  .contacts-addr {
+    height: 100%;
+  }
+
   .contacts-addr-item {
     padding: 15px;
   }
@@ -1197,6 +1201,23 @@
     font-size: 24px;
   }
 
+  .row-vac,
+  .row-vac-detail {
+    margin-top: 20px;
+  }
+
+  .row-contact {
+    margin-top: 25px;
+  }
+
+  .page-wrap {
+    margin-top: 10px;
+  }
+
+  .col-contact-cities {
+    margin-top: 0;
+  }
+
   .vac-detail-image {
     max-width: 55%;
   }
@@ -1396,7 +1417,7 @@
     margin-left: -15px;
     margin-right: -15px;
     border-radius: 0 !important;
-    margin-bottom: 150px;
+    margin-bottom: 118px;
   }
 
   .addr-map-link {
