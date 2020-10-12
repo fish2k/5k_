@@ -2907,6 +2907,8 @@ select.addr-form-input {
   padding-left: 70px;
   padding-right: 28px;
 
+  position: relative;
+
   align-items: center;
 
   background-repeat: no-repeat;
@@ -2928,100 +2930,137 @@ select.addr-form-input {
   border-color: var(--accent);
 }
 
-.srv-1 {
-  background-image: url(../images/services/app/1-def.png);
+.addr-service-item-btn::before {
+  position: absolute;
+  content:'';
+  top: 50%;
+  left: 16px;
+  width: 45px;
+  background-repeat: no-repeat;
+
+  /* transform: translateY(-50%) */
 }
 
-.srv-1:hover {
-  background-image: url(../images/services/app/1-hover.png);
+.srv-1::before {
+  height: 34px;
+
+  top: 7px;
+
+  background-image: url(../images/services/app/1.png);
+  background-position: 0 -38px;
 }
 
-.srv-1.active {
-  background-image: url(../images/services/app/1-active.png);
+.srv-1:hover::before {
+  background-position: 0 -72px;
 }
 
-.srv-2 {
-  background-image: url(../images/services/app/2-def.png);
+.srv-1.active::before {
+  background-position: 0 -2px;
 }
 
-.srv-2:hover {
-  background-image: url(../images/services/app/2-hover.png);
+.srv-2::before {
+  top: 8px;
+  background-image: url(../images/services/app/2.png);
+  background-position: 0 -34px;
+  height: 31px;
 }
 
-.srv-2.active {
-  background-image: url(../images/services/app/2-active.png);
+.srv-2:hover::before {
+  background-position: 0 -65px;
 }
 
-.srv-3 {
-  background-image: url(../images/services/app/3-def.png);
+.srv-2.active::before {
+  background-position: 0 -2px;
 }
 
-.srv-3:hover {
-  background-image: url(../images/services/app/3-hover.png);
+.srv-3::before {
+  top: 8px;
+  background-image: url(../images/services/app/3.png);
+  background-position: 0 -37px;
+  height: 33px;
 }
 
-.srv-3.active {
-  background-image: url(../images/services/app/3-active.png);
+.srv-3:hover::before {
+  background-position: 0 -70px;
 }
 
-.srv-4 {
-  background-image: url(../images/services/app/4-def.png);
+.srv-3.active::before {
+  background-position: 0 -2px;
 }
 
-.srv-4:hover {
-  background-image: url(../images/services/app/4-hover.png);
+.srv-4::before {
+  top: 9px;
+  background-image: url(../images/services/app/4.png);
+  background-position: 0 -30px;
+  height: 30px;
 }
 
-.srv-4.active {
-  background-image: url(../images/services/app/4-active.png);
+.srv-4:hover::before {
+  background-position: 0 -60px;
 }
 
-.srv-5 {
-  background-image: url(../images/services/app/5-def.png);
+.srv-4.active::before {
+  background-position: 0 0px;
 }
 
-.srv-5:hover {
-  background-image: url(../images/services/app/5-hover.png);
+.srv-5::before {
+  top: 9px;
+  background-image: url(../images/services/app/5.png);
+  background-position: 0 -34px;
+  height: 31px;
 }
 
-.srv-5.active {
-  background-image: url(../images/services/app/5-active.png);
+.srv-5:hover::before {
+  background-position: 0 -65px;
 }
 
-.srv-6 {
-  background-image: url(../images/services/app/6-def.png);
+.srv-5.active::before {
+  background-position: 0 -2px;
 }
 
-.srv-6:hover {
-  background-image: url(../images/services/app/6-hover.png);
+.srv-6::before {
+  top: 9px;
+  background-image: url(../images/services/app/6.png);
+  background-position: 0 -37px;
+  height: 34px;
 }
 
-.srv-6.active {
-  background-image: url(../images/services/app/6-active.png);
+.srv-6:hover::before {
+  background-position: -1px -71px;
 }
 
-.srv-7 {
-  background-image: url(../images/services/app/7-def.png);
+.srv-6.active::before {
+  background-position: 0 -2px;
 }
 
-.srv-7:hover {
-  background-image: url(../images/services/app/7-hover.png);
+.srv-7::before {
+  top: 12px;
+  background-image: url(../images/services/app/7.png);
+  background-position: 0 -30px;
+  height: 26px;
 }
 
-.srv-7.active {
-  background-image: url(../images/services/app/7-active.png);
+.srv-7:hover::before {
+  background-position: 0 -56px;
 }
 
-.srv-8 {
-  background-image: url(../images/services/app/8-def.png);
+.srv-7.active::before {
+  background-position: 0 -2px;
 }
 
-.srv-8:hover {
-  background-image: url(../images/services/app/8-hover.png);
+.srv-8::before {
+  top: 8px;
+  background-image: url(../images/services/app/8.png);
+  background-position: 0 -41px;
+  height: 33px;
 }
 
-.srv-8.active {
-  background-image: url(../images/services/app/8-active.png);
+.srv-8:hover::before {
+  background-position: 0 -75px;
+}
+
+.srv-8.active::before {
+  background-position: 0 -5px;
 }
 
 .addr-map-select {
