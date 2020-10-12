@@ -520,6 +520,7 @@
 
   .reviews-inner {
     font-size: 14px;
+    padding-bottom: 30px;
   }
 
   .header-nav-sub {
@@ -1201,6 +1202,14 @@
     font-size: 20px;
   }
 
+  .row-service {
+    margin-top: 20px;
+  }
+
+  .review-page-row {
+    padding-top: 20px;
+  }
+
   .row-vac,
   .row-vac-detail {
     margin-top: 20px;
@@ -1291,6 +1300,11 @@
 
   .service-content {
     margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+  .stock-content {
+    margin-top: 20px;
   }
 
   .online-icon {
@@ -1838,7 +1852,11 @@
 
   .service-item {
     padding: 15px;
-    min-height: 150px;
+    min-height: 125px;
+  }
+
+  .col-contact-item {
+    margin-bottom: 15px;
   }
 
   .service-icon {
@@ -1890,7 +1908,7 @@
 
   .section-stock-services {
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .section-contacts {
@@ -1903,6 +1921,6 @@
   }
 
   .contact-form {
-    padding-top: 0;
+    padding-top: 15px;
   }
 }
