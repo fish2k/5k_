@@ -1198,7 +1198,7 @@
 
 @media (max-width: 480px) {
   .section-heading {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .row-vac,
@@ -1249,6 +1249,7 @@
 
   .row-online-app {
     padding-bottom: 0;
+    margin-top: 25px;
   }
 
   .section-vac-end {
