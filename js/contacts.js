@@ -17,7 +17,7 @@ ymaps.ready(function () {
     $.ajax({
         //type: "POST",
         //url: '/ajax/get-offices?city_id='+city_id,
-        url: 'city.json',
+        url: '/5k_/city.json',
         data: ({}),
         dataType: 'json',
         complete:function(){},
@@ -35,7 +35,7 @@ ymaps.ready(function () {
                     d:key.pt2,
                 },{
                     iconLayout: "default#image",
-                    iconImageHref: "images/5k-blue.svg",
+                    iconImageHref: "/5k_/images/5k-blue.svg",
                     iconImageSize: [21, 21],
                     iconImageOffset: [0, 0],
 
@@ -105,7 +105,7 @@ ymaps.ready(function () {
                 window.activeMapMark && window.activeMapMark.options.set({
                     iconImageSize: [21, 21],
                     iconImageOffset: [0, 0],
-                    iconImageHref: "images/5k-blue.svg"
+                    iconImageHref: "/5k_/images/5k-blue.svg"
                 });
                 window.activeMapMark = value;
                 // перехват точки по ключу key.addr
@@ -126,7 +126,7 @@ ymaps.ready(function () {
                 value.options.set({
                     iconImageSize: [35, 35],
                     iconImageOffset: [-7, -7],
-                    iconImageHref: "images/5k-red.svg"
+                    iconImageHref: "/5k_/images/5k-red.svg"
                 });
 
                 contactMap.setCenter([value.properties.get('sh'), value.properties.get('d')]);
