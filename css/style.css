@@ -3172,11 +3172,11 @@ select.addr-form-input {
 .contacts-addr {
   padding: 20px 15px 20px 20px;
   background-color: #f4f4f4;
-  height: 80%;
+  height: 100%;
 }
 
 .contacts-addr-list {
-  max-height: 364px;
+  max-height: 460px;
   overflow-y: scroll;
   padding-right: 15px;
 }

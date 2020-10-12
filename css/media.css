@@ -1399,6 +1399,10 @@
     padding-bottom: 10px;
   }
 
+  .contacts-addr-list {
+    height: 241px;
+  }
+
   .contacts-addr-list::-webkit-scrollbar {
     width: 5px;
   }
@@ -1567,7 +1571,7 @@
   }
 
   .breadcrumbz {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
 
   .breadcrumbz-item {
